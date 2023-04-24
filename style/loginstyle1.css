@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background-color: #ffffff;  
+
+}
+.container{
+  max-width: 450px;
+  width: 100%;
+  background-color :rgba(0, 0, 0, 0.816);
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: #fff;
+}
+
+.content form .user-details{
+  display:block;
+  margin: 20px 0 12px 0;
+  
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  
+  
+  
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color:white;
+  
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: white;
+}
+
+
+.button {
+  padding: 16px 35px;
+  border-radius: 15px;
+  margin: 10px 0;
+  background-color: #3183ff;
+  background-image: linear-gradient(150deg, transparent, #0751bf);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0751bf;
+  transform: scale(0.94);
+}
+
+
+  p1{
+    color:red;
+    text-align:center;
+    font-weight:bold;
+  }
+
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+ 
+

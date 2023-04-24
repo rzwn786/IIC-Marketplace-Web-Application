@@ -1,0 +1,32 @@
+.search-bar{
+    width:100%;
+    background-color:rgb(224, 223, 223);
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(90deg, rgba(247,186,111,1) 0%, rgba(246,120,120,1) 100%);
+  }
+  .input-group{
+    padding:5px;
+  }
+  .input-group input{
+    width:500px;
+    height:35px;
+    border: none;
+  }
+  .input-group button{
+    width:70px;
+    height:35px;
+    border:none;
+    background-color:gold;
+  }
+  .input-group button:hover{
+    background-color:rgb(255, 217, 0,0.5);
+  }
+  .input-group select{
+    width:200px;
+    height:35px;
+    border: none;
+  }

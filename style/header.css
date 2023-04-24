@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    margin : 0;
+    padding : 0;
+}
+
+.header{
+   display: flex;
+   justify-content:space-between;
+   align-items:center;
+   background-color:black;
+   height: 40%;
+}
+.header .logo {   
+    width: 100%;
+    height: auto;
+    cursor: pointer;   
+} 
+
+.header-link ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+.header-link  li {
+    list-style: none;
+}
+.header-link  li a{
+    text-decoration: none;
+    color:goldenrod ;
+    padding:1rem;
+    transition-duration: 0.4s;
+    display:block;
+}
+.header-link li :hover{
+    color:rgb(255, 255, 255);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 50px;
+    right: 1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:20px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+.dropbtn {
+
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    color:goldenrod ;
+    background-color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+@media (max-width:445px){
+
+    .toggle-button{
+        display: flex;
+    }
+    .header-link {
+        display:none;
+        width: 100%;
+        
+    }
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-link ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .header-link li{
+        text-align: center;
+    }
+    .header-link li a{
+        padding:.5rem 1rem;
+    }
+    .header-link.active{
+        display: flex;
+    }
+
+}

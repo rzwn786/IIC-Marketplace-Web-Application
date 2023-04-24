@@ -1,0 +1,53 @@
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(247,186,111,1) 0%, rgba(246,120,120,1) 100%);
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    transition-duration: 0.4s;
+  }
+  
+  .navbar a:hover {
+    background-color:rgba(0, 0, 0, 0.49);
+    color: white;
+  }
+  
+  .navbar a.active {
+    background-color: rgba(0, 0, 0, 0.49);
+    color: white;
+  }
+  
+  .navbar .search-container {
+    float: right;
+  }
+  
+  .navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+  }
+  
+  .navbar .search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: goldenrod;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar .search-container button:hover {
+    background: goldenrod;
+
+  }
