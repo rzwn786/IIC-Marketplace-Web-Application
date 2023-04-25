@@ -1,4 +1,5 @@
 # IIC-Marketplace-Web-Application
+
 IIC Marketplace is a Web application developed in PHP, with MySQL as the backend database. It serves as an online platform for buying and selling various items. The app allows users to view other users' listings and contact them via WhatsApp to inquire about the item they are interested in.
 
 ![Screenshot (156)](https://user-images.githubusercontent.com/100117450/234139999-2a1b8fed-db17-4607-babf-f7a4e435191a.png)
